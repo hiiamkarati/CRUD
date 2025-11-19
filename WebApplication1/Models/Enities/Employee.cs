@@ -1,5 +1,8 @@
-﻿namespace WebApplication1.Models.Enities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication1.Models.Enities
 {
+    [Table("Employee")]   // 👈 EXACT table name in your database
     public class Employee
     {
         public int EmployeeId { get; set; }
